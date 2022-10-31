@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <tbody id="project-display"></tbody>
+      <!-- Timeblocks go here -->
+      <form class="form-horizontal">
+        <div class="form-inline form-group">
+            <label class="col-md-1 text-left" id="label_text">9AM</label>
+            <input class="col-md-10 form-control" type="text" id="9AM">
+            <button class="saveBtn save-data-btn" id="button_9_am"> </button>
+        </div>
+
+        <div class="form-inline form-group">
+          <label class="col-md-1 text-left" id="label_text">10AM</label>
+          <input class="col-md-10 form-control" type="text" id="10AM">
+          <button class="saveBtn save-data-btn" id="button_10_am"> </button>
+        </div>
+
+        <div class="form-inline form-group">
+          <label class="col-md-1 text-left" id="label_text">11AM</label>
+          <input class="col-md-10 form-control" type="text" id="11AM">
+          <button class="saveBtn save-data-btn" id="button_11_am"> </button>
+        </div>
+
+        <div class="form-inline form-group">
+          <label class="col-md-1 text-left" id="label_text">12PM</label>
+          <input class="col-md-10 form-control" type="text" id="12PM">
+          <button class="saveBtn save-data-btn" id="button_12_pm"> </button>
+        </div>
+
+        <div class="form-inline form-group">
+          <label class="col-md-1 text-left" id="label_text">1PM</label>
+          <input class="col-md-10 form-control" type="text" id="1PM">
+          <button class="saveBtn save-data-btn" id="button_1_pm"> </button>
+        </div>
+
+        <div class="form-inline form-group">
+          <label class="col-md-1 text-left" id="label_text">2PM</label>
+          <input class="col-md-10 form-control" type="text" id="2PM">
+          <button class="saveBtn save-data-btn" id="button_2_pm"> </button>
+        </div>
+
+        <div class="form-inline form-group">
+          <label class="col-md-1 text-left" id="label_text">3PM</label>
+          <input class="col-md-10 form-control" type="text" id="3PM">
+          <button class="saveBtn save-data-btn" id="button_3_pm"> </button>
+        </div>
+
+        <div class="form-inline form-group">
+          <label class="col-md-1 text-left" id="label_text">4PM</label>
+          <input class="col-md-10 form-control" type="text" id="4PM">
+          <button class="saveBtn save-data-btn" id="button_4_pm"> </button>
+        </div>
+
+        <div class="form-inline form-group">
+          <label class="col-md-1 text-left" id="label_text">5PM</label>
+          <input class="col-md-10 form-control" type="text" id="5PM">
+          <button class="saveBtn save-data-btn" id="button_5_pm"> </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
